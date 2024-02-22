@@ -1,0 +1,14 @@
+---
+# tasks file for roles/ansible-role-user
+
+- name: create user
+  ansible.builtin.user:
+    name: "{{ user_name }}"
+    shell: /bin/bash
+    groups: sudo
+    create_home: true
+    append: yes
+    state: present
+    password: "{{ user_password | password_hash('sha512') }}"
+    comment: "init user"
+  no_log: True

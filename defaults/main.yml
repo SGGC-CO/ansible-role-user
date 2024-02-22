@@ -1,0 +1,8 @@
+---
+# defaults file for ansible-role-user
+user_name: "ubuntu"
+user_password: "ubuntu"
+
+# Inventory file
+user: "root"
+ssh_private_key_file: "~/.ssh/id_rsa"

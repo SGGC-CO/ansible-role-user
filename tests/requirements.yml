@@ -1,0 +1,5 @@
+---
+roles:
+  - name: ansible-role-user
+    src: https://github.com/SGGC-CO/ansible-role-user.git
+    version: main
